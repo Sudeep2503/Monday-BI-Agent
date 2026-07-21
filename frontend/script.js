@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const API_URL = "https://monday-bi-agent-2-8104.onrender.com";
+  const API_URL = "https://monday-bi-agent-2-8l04.onrender.com";
   const chatHistory = document.getElementById('chatHistory');
   const input = document.getElementById('questionInput');
   const sendButton = document.getElementById('sendButton');

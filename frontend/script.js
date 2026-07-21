@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const API_URL = "https://monday-bi-agent-2dt4.onrender.com";
   const chatHistory = document.getElementById('chatHistory');
   const input = document.getElementById('questionInput');
   const sendButton = document.getElementById('sendButton');
@@ -45,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const typingIndicator = addTypingIndicator();
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/ask', {
+      const response = await fetch(`${API_URL}/ask`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

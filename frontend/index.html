@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monday BI Agent</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1>Monday BI Agent</h1>
+          <p>AI Business Intelligence Assistant</p>
+        </div>
+        <div class="status-pill">Live insights</div>
+      </header>
+
+      <main class="chat-panel">
+        <section class="chat-history" id="chatHistory"></section>
+
+        <section class="suggestions" aria-label="Suggested questions">
+          <button class="suggestion-chip" data-question="How is our pipeline?">How is our pipeline?</button>
+          <button class="suggestion-chip" data-question="Leadership summary">Leadership summary</button>
+          <button class="suggestion-chip" data-question="Top clients">Top clients</button>
+          <button class="suggestion-chip" data-question="Revenue by sector">Revenue by sector</button>
+          <button class="suggestion-chip" data-question="Delayed work orders">Delayed work orders</button>
+          <button class="suggestion-chip" data-question="Monthly pipeline">Monthly pipeline</button>
+        </section>
+
+        <section class="composer">
+          <textarea id="questionInput" rows="1" placeholder="Ask about your pipeline, revenue, work orders..."></textarea>
+          <button id="sendButton" type="button">Send</button>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -26,7 +26,7 @@ class Config:
 
     # Flask Configuration
     DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
-    PORT = int(os.getenv('PORT', 5000))
+    PORT = int(os.getenv("PORT", 10000))
     SECRET_KEY = os.getenv('SECRET_KEY', 'dev-secret-key')
 
     @classmethod
